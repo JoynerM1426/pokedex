@@ -32,7 +32,7 @@ const PokemonCard = ({ url }) => {
                     }
                     
                  </li>
-                 <img className='poke-ball' src="/public/pokebola.png" alt="" />
+                 <img className='poke-ball' src="pokebola.png" alt="poke-ball" />
 
                  <li className='content-card'>
                         <div className='div-name-card'>

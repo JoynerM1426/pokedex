@@ -5,6 +5,7 @@ import axios from 'axios';
 
 
 
+
 const PokedexDetails = () => {
 const [data, setData] =  useState({})
 
@@ -24,7 +25,7 @@ useEffect(() => {
   <div className='content-details'>
 
    <div  className='content-details-2' >
-    <img className='pokemon-img' src="/public/descargatitle.png" alt="" />
+    <img className='pokemon-img' src="/public/descargatitle.png" alt="title-pokemon" />
 
       <div className='details-img'>
         <span className='line-black'></span>
