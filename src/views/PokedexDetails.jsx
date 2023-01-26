@@ -25,7 +25,7 @@ useEffect(() => {
   <div className='content-details'>
 
    <div  className='content-details-2' >
-    <img className='pokemon-img' src="descargatitle.png" alt="title-pokemon" />
+    <img className='pokemon-img' src="/public/2021105724573_1.jpg" alt="title-pokemon" />
 
       <div className='details-img'>
         <span className='line-black'></span>
