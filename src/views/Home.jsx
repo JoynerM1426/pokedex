@@ -27,9 +27,9 @@ const Home = () => {
 
       <h2>Hello Trainer!</h2>
 
-        <img className="ash" src="/public/Ash_Ketchum_29.webp" alt="ash-ketchum" />
+        <img className="ash" src="Ash_Ketchum_29.webp" alt="ash-ketchum" />
         
-        <img className="img-arrow" src="/public/flecha-hacia-arriba.png" alt="arrow" />
+        <img className="img-arrow" src="flecha-hacia-arriba.png" alt="arrow" />
         
         <div className="content-form-home">
           <form className="form-home" onSubmit={(e) => lookTheValue(e)}>
