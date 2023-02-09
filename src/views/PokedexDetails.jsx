@@ -2,6 +2,7 @@
 import {  useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import ButtonBack from '../components/ButtonBack';
 
 
 
@@ -22,7 +23,16 @@ useEffect(() => {
 },[id])
 
   return (
+
+    
+
   <div className='content-details'>
+    <section className='content-button'>
+
+      <ButtonBack></ButtonBack>
+
+    </section>
+   
 
    <div  className='content-details-2' >
     <img className='pokemon-img' src="/descarga.png" alt="title-pokemon" />

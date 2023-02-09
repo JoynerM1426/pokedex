@@ -24,25 +24,28 @@ const Home = () => {
 
   return (
     <div className="all-home">
+          <h2>Hello Trainer!</h2>
 
-      <h2>Hello Trainer!</h2>
+            <img className="ash" src="Ash_Ketchum_29.webp" alt="ash-ketchum" />
+            <div className="contain-arrow">
+              <div className="cardred">  </div>
+              <img className="img-arrow" src="flecha-hacia-arriba.png" alt="arrow" />
 
-        <img className="ash" src="Ash_Ketchum_29.webp" alt="ash-ketchum" />
-        
-        <img className="img-arrow" src="flecha-hacia-arriba.png" alt="arrow" />
-        
-        <div className="content-form-home">
-          <form className="form-home" onSubmit={(e) => lookTheValue(e)}>
-          <input 
-          className="input-home"
-          type="text" 
-          placeholder="Write your name"
-          />
-          <button className="button-home" ><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-       </div>
+            </div>
+          
+            
+            <div className="content-form-home">
+              <form className="form-home" onSubmit={(e) => lookTheValue(e)}>
+              <input 
+              className="input-home"
+              type="text" 
+              placeholder="Write your name"
+              />
+              <button className="button-home" ><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+          </div>
+      </div>
       
-    </div>
   );
 };
 

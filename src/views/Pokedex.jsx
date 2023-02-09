@@ -30,7 +30,7 @@ const Pokedex = () => {
 
         
 
-      <h2 className='message'>{`Welcome ${pokeInfo}, here you can learn more about pokemons.`}</h2>
+      <h2 className='message'>{`Welcome,  ${pokeInfo} here you can learn more about pokemons.`}</h2>
 
       
       <InputSearch/>

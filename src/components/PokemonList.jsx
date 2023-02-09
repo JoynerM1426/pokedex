@@ -65,15 +65,17 @@ const PokemonList = () => {
 
   return (
     <div className='list-card'>
-           
+          
+        <div className='filter-by-type'>
 
-        <select name="" id="" onChange={lookType}>
-            {
-              type?.map((item) => (
-                <option value={item?.url} key={item?.name}>{item.name}</option>
-              ))
-            }
-        </select>
+            <select   id="" onChange={lookType}> 
+                {
+                  type?.map((item) => (
+                    <option value={item?.url} key={item?.name}>{item.name}</option>
+                  ))
+                }
+            </select>
+        </div>
       
       <ul className='list-map'>
         
