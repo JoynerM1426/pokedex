@@ -35,37 +35,53 @@ useEffect(() => {
    
 
    <div  className='content-details-2' >
-    <img className='pokemon-img' src="/descarga.png" alt="title-pokemon" />
+    <img className='pokemon-img' src="/2021105724573_1.jpg" alt="title-pokemon" />
 
       <div className='details-img'>
         <span className='line-black'></span>
+        <section className='img-details'>
+
           {
-            data.sprites?.other?.dream_world.front_default === null ? <img className='img-details' src={data.sprites?.front_default } alt="" /> : <img className='img-details' src={data.sprites?.other?.dream_world.front_default } alt="" />
+            data.sprites?.other?.dream_world.front_default === null ? <img className='img-size' src={data.sprites?.front_default } alt="" /> : <img  src={data.sprites?.other?.dream_world.front_default } alt="" />
           } 
+
+        </section>
       <span className='bg-white'></span>
       </div>
    
     <div className='card-details'>
-        <h1 className='title-card-detail' > <span>{data?.name}</span></h1>
+        <h1 className='title-card-detail' > <span className='name-details'>{data?.name}</span></h1>
     
             <h3 className='order'>#{data?.order}</h3>
             <h3 className='weight'>Weight: {data?.weight}</h3>
             <h3 className='height'>Height: {data?.height}</h3>
          
         <div className='abilities'>
-          <h3>Abilities: </h3>
-            {
+          <h3><span className='name-abilities'>Abilities:</span>
+           <br />
+           {data.abilities?.[0]?.ability.name}
+           <br />
+           {data.abilities?.[1]?.ability.name}
+
+          </h3>
+            {/* {
               data?.abilities?.map((item, index) => 
               <h3 key={index}>{item.ability.name}</h3>  )
-            }
+            } */}
         </div>
         <div className='type'>
-          <h3>Types: </h3>
+          {/* <h3>Types: </h3>
           {
             data.types?.map((items, index) => 
             <h3 key={index}>{items.type.name}</h3>
             )
-          }
+          } */}
+          <h3> <span className='name-type'>Type:</span>
+            <br />
+            {data.types?.[0]?.type.name}
+            <br />
+            {data.types?.[1]?.type.name}
+          </h3>
         </div>
 
    </div>

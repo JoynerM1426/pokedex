@@ -38,7 +38,7 @@ const InputSearch = () => {
               placeholder='Search pokemons'
               className='input-search'
               id='name' />
-              <button className='button-search' type='submit'> <i class="fa-solid fa-magnifying-glass"/></button>
+              <button className='button-search' type='submit'> <i className="fa-solid fa-magnifying-glass"/></button>
            </form>
           
 

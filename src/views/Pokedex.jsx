@@ -28,7 +28,9 @@ const Pokedex = () => {
   return (
     <div>
 
-        
+      <div class="pokebola">
+          <div class="pokebola-botao"></div>
+      </div> 
 
       <h2 className='message'>{`Welcome,  ${pokeInfo} here you can learn more about pokemons.`}</h2>
 
