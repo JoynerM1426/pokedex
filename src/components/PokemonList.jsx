@@ -9,23 +9,18 @@ const PokemonList = () => {
  const [data, setData] = useState([])
  const [ type, setType] = useState([])
 
- 
- 
-
  useEffect(()=>{
 
-  
   axios.get(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1279/`)
-  .then((resp) => 
-    setData(resp?.data?.results))
+  .then((resp) =>
+   {  
+    setData(resp?.data?.results)})
   .catch(error => console.log(error))
-
-
+  
    axios.get(`https://pokeapi.co/api/v2/type/`)
   .then(resp => setType ( resp.data.results))
   .catch(error => console.log(error))
 
- 
 
  },[])
 
@@ -65,6 +60,7 @@ const PokemonList = () => {
 
   return (
     <div className='list-card'>
+
           
         <div className='filter-by-type'>
 

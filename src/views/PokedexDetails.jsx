@@ -3,30 +3,41 @@ import {  useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ButtonBack from '../components/ButtonBack';
+import Loader from '../components/Loader';
 
 
 
 
 const PokedexDetails = () => {
 const [data, setData] =  useState({})
+const [isLoad, setIsLoad] = useState(false)
 
 const {id} =  useParams()
 
 useEffect(() => {
 
+  
+
  axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
  .then(resp => {
+  setIsLoad(true)
   console.log(resp.data)
   setData(resp.data)})
  .catch(error => console.log(error))
+ .finally(() => {
+  setTimeout(() => {
+    setIsLoad(false)
+  }, 1500);
+ })
+
+
+ setIsLoad(false)
 
 },[id])
 
   return (
-
-    
-
   <div className='content-details'>
+    {isLoad && <Loader/> }
     <section className='content-button'>
 
       <ButtonBack></ButtonBack>
