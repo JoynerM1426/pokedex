@@ -21,13 +21,13 @@ useEffect(() => {
  axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
  .then(resp => {
   setIsLoad(true)
-  console.log(resp.data)
+  // console.log(resp.data)
   setData(resp.data)})
  .catch(error => console.log(error))
  .finally(() => {
   setTimeout(() => {
     setIsLoad(false)
-  }, 1500);
+  }, 1000);
  })
 
 
