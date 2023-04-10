@@ -12,6 +12,10 @@
  display: grid;
  place-items: center;
  height: 500px; 
+ background-image:url("/pokebola.png");
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: 50%;
 }
 
 .ash{
@@ -65,31 +69,33 @@
   }
   100%{
   
-    top: 75%;
+    top: 65%;
 
   }
   
 }
-
+.title-home{
+  margin-top: 30px;
+}
 .content-form-home{
   border: 1px solid grey;
-  
-
+  margin-bottom: 40px;
 }
 .input-home{
   border: none;
-  padding: 9px;
+  padding: 0px 9px;
   outline: none;
   border: 0;
+  height: 35px;
 }
 .button-home{
-  font-size: 18px;
   width: 35px;
   border: none;
-  background-color: white;
+  background-color: grey;
   cursor: pointer;
   height: 35px;
 }
+
 /* type */
 .filter-by-type{
   height: 25px;

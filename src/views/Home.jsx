@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <div className="all-home">
-          <h2>Hello Trainer!</h2>
+          <h2 className="title-home">Hello Trainer!</h2>
 
             <img className="ash" src="Ash_Ketchum_29.webp" alt="ash-ketchum" />
             <div className="contain-arrow">
